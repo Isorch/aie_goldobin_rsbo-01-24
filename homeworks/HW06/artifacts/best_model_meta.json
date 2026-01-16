@@ -1,0 +1,55 @@
+{
+  "best_model_name": "Stacking",
+  "criterion": "ROC-AUC",
+  "best_roc_auc": 0.9667963790564218,
+  "test_metrics": {
+    "accuracy": 0.93125,
+    "precision": 0.9122807017543859,
+    "recall": 0.8711340206185567,
+    "f1": 0.8912326961107448,
+    "roc_auc": 0.9667963790564218
+  },
+  "best_parameters": "{'cv': StratifiedKFold(n_splits=3, random_state=42, shuffle=True), 'estimators': [('dt', DecisionTreeClassifier(max_depth=7, min_samples_leaf=5, random_state=42)), ('rf', RandomForestClassifier(n_jobs=-1, random_state=42))], 'final_estimator__C': 1.0, 'final_estimator__class_weight': None, 'final_estimator__dual': False, 'final_estimator__fit_intercept': True, 'final_estimator__intercept_scaling': 1, 'final_estimator__l1_ratio': 0.0, 'final_estimator__max_iter': 1000, 'final_estimator__n_jobs': None, 'final_estimator__penalty': 'deprecated', 'final_estimator__random_state': 42, 'final_estimator__solver': 'lbfgs', 'final_estimator__tol': 0.0001, 'final_estimator__verbose': 0, 'final_estimator__warm_start': False, 'final_estimator': LogisticRegression(max_iter=1000, random_state=42), 'n_jobs': -1, 'passthrough': False, 'stack_method': 'auto', 'verbose': 0, 'dt': DecisionTreeClassifier(max_depth=7, min_samples_leaf=5, random_state=42), 'rf': RandomForestClassifier(n_jobs=-1, random_state=42), 'dt__ccp_alpha': 0.0, 'dt__class_weight': None, 'dt__criterion': 'gini', 'dt__max_depth': 7, 'dt__max_features': None, 'dt__max_leaf_nodes': None, 'dt__min_impurity_decrease': 0.0, 'dt__min_samples_leaf': 5, 'dt__min_samples_split': 2, 'dt__min_weight_fraction_leaf': 0.0, 'dt__monotonic_cst': None, 'dt__random_state': 42, 'dt__splitter': 'best', 'rf__bootstrap': True, 'rf__ccp_alpha': 0.0, 'rf__class_weight': None, 'rf__criterion': 'gini', 'rf__max_depth': None, 'rf__max_features': 'sqrt', 'rf__max_leaf_nodes': None, 'rf__max_samples': None, 'rf__min_impurity_decrease': 0.0, 'rf__min_samples_leaf': 1, 'rf__min_samples_split': 2, 'rf__min_weight_fraction_leaf': 0.0, 'rf__monotonic_cst': None, 'rf__n_estimators': 100, 'rf__n_jobs': -1, 'rf__oob_score': False, 'rf__random_state': 42, 'rf__verbose': 0, 'rf__warm_start': False}",
+  "top_features": [
+    {
+      "feature": "num19",
+      "importance_mean": 0.05996457772586468
+    },
+    {
+      "feature": "num18",
+      "importance_mean": 0.056999707988421175
+    },
+    {
+      "feature": "num07",
+      "importance_mean": 0.02424116664973852
+    },
+    {
+      "feature": "num04",
+      "importance_mean": 0.01611277042811443
+    },
+    {
+      "feature": "num20",
+      "importance_mean": 0.01393085673658021
+    },
+    {
+      "feature": "num01",
+      "importance_mean": 0.011240938118937649
+    },
+    {
+      "feature": "num24",
+      "importance_mean": 0.008106812757097237
+    },
+    {
+      "feature": "num22",
+      "importance_mean": 0.007082153648875189
+    },
+    {
+      "feature": "num08",
+      "importance_mean": 0.00700581801330562
+    },
+    {
+      "feature": "num14",
+      "importance_mean": 0.006309671931339245
+    }
+  ]
+}
