@@ -1,0 +1,41 @@
+{
+  "ds1": {
+    "method": "AgglomerativeClustering",
+    "params": {
+      "n_clusters": 2,
+      "linkage": "ward"
+    },
+    "criterion": "silhouette_score",
+    "metrics": {
+      "silhouette_score": 0.5216395622404242,
+      "davies_bouldin_score": 0.6853295219054459,
+      "calinski_harabasz_score": 11786.95462267153
+    }
+  },
+  "ds2": {
+    "method": "AgglomerativeClustering",
+    "params": {
+      "n_clusters": 2,
+      "linkage": "average"
+    },
+    "criterion": "silhouette_score",
+    "metrics": {
+      "silhouette_score": 0.41976775922231674,
+      "davies_bouldin_score": 0.8791287795996852,
+      "calinski_harabasz_score": 395.4825694831712
+    }
+  },
+  "ds3": {
+    "method": "AgglomerativeClustering",
+    "params": {
+      "n_clusters": 2,
+      "linkage": "average"
+    },
+    "criterion": "silhouette_score",
+    "metrics": {
+      "silhouette_score": 0.4252961244445327,
+      "davies_bouldin_score": 0.813802016581118,
+      "calinski_harabasz_score": 8.943143115556799
+    }
+  }
+}
