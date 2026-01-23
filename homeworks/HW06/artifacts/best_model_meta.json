@@ -1,55 +1,136 @@
 {
-  "best_model_name": "Stacking",
-  "criterion": "ROC-AUC",
-  "best_roc_auc": 0.9667963790564218,
-  "test_metrics": {
-    "accuracy": 0.93125,
-    "precision": 0.9122807017543859,
-    "recall": 0.8711340206185567,
-    "f1": 0.8912326961107448,
-    "roc_auc": 0.9667963790564218
+  "metadata": {
+    "generated_date": "2026-01-23T22:43:59.312385",
+    "total_models_evaluated": 6,
+    "selection_criterion": "ROC-AUC",
+    "best_model_name": "RandomForest"
   },
-  "best_parameters": "{'cv': StratifiedKFold(n_splits=3, random_state=42, shuffle=True), 'estimators': [('dt', DecisionTreeClassifier(max_depth=7, min_samples_leaf=5, random_state=42)), ('rf', RandomForestClassifier(n_jobs=-1, random_state=42))], 'final_estimator__C': 1.0, 'final_estimator__class_weight': None, 'final_estimator__dual': False, 'final_estimator__fit_intercept': True, 'final_estimator__intercept_scaling': 1, 'final_estimator__l1_ratio': 0.0, 'final_estimator__max_iter': 1000, 'final_estimator__n_jobs': None, 'final_estimator__penalty': 'deprecated', 'final_estimator__random_state': 42, 'final_estimator__solver': 'lbfgs', 'final_estimator__tol': 0.0001, 'final_estimator__verbose': 0, 'final_estimator__warm_start': False, 'final_estimator': LogisticRegression(max_iter=1000, random_state=42), 'n_jobs': -1, 'passthrough': False, 'stack_method': 'auto', 'verbose': 0, 'dt': DecisionTreeClassifier(max_depth=7, min_samples_leaf=5, random_state=42), 'rf': RandomForestClassifier(n_jobs=-1, random_state=42), 'dt__ccp_alpha': 0.0, 'dt__class_weight': None, 'dt__criterion': 'gini', 'dt__max_depth': 7, 'dt__max_features': None, 'dt__max_leaf_nodes': None, 'dt__min_impurity_decrease': 0.0, 'dt__min_samples_leaf': 5, 'dt__min_samples_split': 2, 'dt__min_weight_fraction_leaf': 0.0, 'dt__monotonic_cst': None, 'dt__random_state': 42, 'dt__splitter': 'best', 'rf__bootstrap': True, 'rf__ccp_alpha': 0.0, 'rf__class_weight': None, 'rf__criterion': 'gini', 'rf__max_depth': None, 'rf__max_features': 'sqrt', 'rf__max_leaf_nodes': None, 'rf__max_samples': None, 'rf__min_impurity_decrease': 0.0, 'rf__min_samples_leaf': 1, 'rf__min_samples_split': 2, 'rf__min_weight_fraction_leaf': 0.0, 'rf__monotonic_cst': None, 'rf__n_estimators': 100, 'rf__n_jobs': -1, 'rf__oob_score': False, 'rf__random_state': 42, 'rf__verbose': 0, 'rf__warm_start': False}",
-  "top_features": [
-    {
-      "feature": "num19",
-      "importance_mean": 0.05996457772586468
+  "best_model": {
+    "name": "RandomForest",
+    "performance": {
+      "test_set": {
+        "accuracy": 0.9258333333333333,
+        "precision": 0.9283667621776505,
+        "recall": 0.8350515463917526,
+        "f1": 0.8792401628222524,
+        "roc_auc": 0.9665757833528008
+      }
     },
-    {
-      "feature": "num18",
-      "importance_mean": 0.056999707988421175
-    },
-    {
-      "feature": "num07",
-      "importance_mean": 0.02424116664973852
-    },
-    {
-      "feature": "num04",
-      "importance_mean": 0.01611277042811443
-    },
-    {
-      "feature": "num20",
-      "importance_mean": 0.01393085673658021
-    },
-    {
-      "feature": "num01",
-      "importance_mean": 0.011240938118937649
-    },
-    {
-      "feature": "num24",
-      "importance_mean": 0.008106812757097237
-    },
-    {
-      "feature": "num22",
-      "importance_mean": 0.007082153648875189
-    },
-    {
-      "feature": "num08",
-      "importance_mean": 0.00700581801330562
-    },
-    {
-      "feature": "num14",
-      "importance_mean": 0.006309671931339245
+    "parameters": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 100,
+      "n_jobs": -1,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
     }
-  ]
+  },
+  "all_models": [
+    {
+      "Model": "Stacking",
+      "Accuracy": 0.9316666666666666,
+      "Precision": 0.9135135135135135,
+      "Recall": 0.8711340206185567,
+      "F1": 0.8918205804749341,
+      "ROC-AUC": 0.9665273792595601
+    },
+    {
+      "Model": "RandomForest",
+      "Accuracy": 0.9258333333333333,
+      "Precision": 0.9283667621776505,
+      "Recall": 0.8350515463917526,
+      "F1": 0.8792401628222524,
+      "ROC-AUC": 0.9665757833528008
+    },
+    {
+      "Model": "GradientBoosting",
+      "Accuracy": 0.9204166666666667,
+      "Precision": 0.9172610556348074,
+      "Recall": 0.8286082474226805,
+      "F1": 0.8706838185511171,
+      "ROC-AUC": 0.9662694885988521
+    },
+    {
+      "Model": "DecisionTree",
+      "Accuracy": 0.865,
+      "Precision": 0.8147632311977716,
+      "Recall": 0.7538659793814433,
+      "F1": 0.7831325301204819,
+      "ROC-AUC": 0.8914109713828653
+    },
+    {
+      "Model": "LogisticRegression",
+      "Accuracy": 0.8275,
+      "Precision": 0.7828125,
+      "Recall": 0.645618556701031,
+      "F1": 0.7076271186440678,
+      "ROC-AUC": 0.8746905312071505
+    },
+    {
+      "Model": "Dummy",
+      "Accuracy": 0.6766666666666666,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC-AUC": NaN
+    }
+  ],
+  "feature_importance": {
+    "method": "permutation_importance",
+    "top_features": [
+      {
+        "feature": "num19",
+        "importance_mean": 0.06059533860647
+      },
+      {
+        "feature": "num18",
+        "importance_mean": 0.05635906791173634
+      },
+      {
+        "feature": "num07",
+        "importance_mean": 0.024122497270326594
+      },
+      {
+        "feature": "num04",
+        "importance_mean": 0.01649071911025346
+      },
+      {
+        "feature": "num20",
+        "importance_mean": 0.012847874663551884
+      },
+      {
+        "feature": "num01",
+        "importance_mean": 0.010941546899598864
+      },
+      {
+        "feature": "num24",
+        "importance_mean": 0.007944619369255024
+      },
+      {
+        "feature": "num08",
+        "importance_mean": 0.007226929498247936
+      },
+      {
+        "feature": "num22",
+        "importance_mean": 0.006861121514905311
+      },
+      {
+        "feature": "num14",
+        "importance_mean": 0.006370692829211344
+      }
+    ]
+  }
 }
