@@ -1,0 +1,26 @@
+{
+  "experiment_id": "E4",
+  "dataset": "KMNIST",
+  "seed": 42,
+  "architecture": {
+    "hidden_sizes": [
+      256,
+      128
+    ],
+    "dropout_p": 0.0,
+    "use_batchnorm": true,
+    "activation": "ReLU"
+  },
+  "training": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "early_stopping": true,
+    "patience": 2,
+    "max_epochs": 7
+  },
+  "best_val_accuracy": 0.9545,
+  "best_val_loss": 0.16620788604021072,
+  "test_accuracy": 0.9017,
+  "test_loss": 0.3806979742050171
+}

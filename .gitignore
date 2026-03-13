@@ -45,6 +45,9 @@ logs/
 # Кеши Jupyter Notebook
 .ipynb_checkpoints
 
+# Данные домашних работ (не пушим датасеты)
+homeworks/**/data/
+
 # Файлы окружения и конфигурации с потенциальными секретами
 .env
 *.env
