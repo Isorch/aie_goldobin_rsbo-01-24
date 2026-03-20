@@ -1,26 +1,20 @@
 {
-  "experiment_id": "E4",
+  "hidden_sizes": [
+    256,
+    128
+  ],
+  "dropout_p": 0.0,
+  "use_batchnorm": true,
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "momentum": 0.0,
+  "weight_decay": 0.0,
   "dataset": "KMNIST",
   "seed": 42,
-  "architecture": {
-    "hidden_sizes": [
-      256,
-      128
-    ],
-    "dropout_p": 0.0,
-    "use_batchnorm": true,
-    "activation": "ReLU"
-  },
-  "training": {
-    "optimizer": "Adam",
-    "lr": 0.001,
-    "weight_decay": 0.0,
-    "early_stopping": true,
-    "patience": 2,
-    "max_epochs": 7
-  },
-  "best_val_accuracy": 0.9545,
-  "best_val_loss": 0.16620788604021072,
-  "test_accuracy": 0.9017,
-  "test_loss": 0.3806979742050171
+  "fast_mode": true,
+  "epochs_trained": 7,
+  "best_val_accuracy": 0.9563333333333334,
+  "best_val_loss": 0.1536361664533615,
+  "test_loss": 0.3816393876075745,
+  "test_accuracy": 0.8953
 }
