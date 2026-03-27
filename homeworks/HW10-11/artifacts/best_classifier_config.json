@@ -1,0 +1,13 @@
+{
+  "dataset": "CIFAR100",
+  "seed": 42,
+  "best_experiment_id": "C4",
+  "model_summary": "ResNet18-finetune-layer4-fc",
+  "train_transform": "resnet_preprocess",
+  "optimizer": "Adam",
+  "lr": 0.0003,
+  "epochs_trained": 2,
+  "best_val_accuracy": 0.5625,
+  "test_accuracy": 0.5475,
+  "fast_mode": true
+}

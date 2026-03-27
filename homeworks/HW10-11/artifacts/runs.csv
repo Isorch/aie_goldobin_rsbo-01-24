@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,CIFAR100,42,SimpleCNN,Adam,0.001,2,0.0515,,,,,
+C2,classification,CIFAR100,42,SimpleCNN,Adam,0.001,2,0.045,,,,,C2 uses augmentation
+C3,classification,CIFAR100,42,ResNet18-head-only,Adam,0.0003,2,0.28,,,,,
+C4,classification,CIFAR100,42,ResNet18-finetune-layer4-fc,Adam,0.0003,2,0.5625,0.5475,,,,
+V1,segmentation,OxfordIIITPet,42,FCN_ResNet50(pretrained),,,0,,,0.7588322068832783,0.882998155205287,0.6995913065709684,"foreground = (class != background), thr=0.5"
+V2,segmentation,OxfordIIITPet,42,FCN_ResNet50(pretrained),,,0,,,0.8295283787871425,0.8238875501093488,0.7068954641165573,"foreground = (class != background), thr=0.7 + smoothing"
