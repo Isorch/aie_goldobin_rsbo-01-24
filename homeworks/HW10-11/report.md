@@ -59,14 +59,14 @@
 
 Ссылки на файлы в репозитории:
 
-- Таблица результатов: ./artifacts/runs.csv
-- Лучшая модель части A: ./artifacts/best_classifier.pt
-- Конфиг лучшей модели части A: ./artifacts/best_classifier_config.json
-- Кривые лучшего прогона классификации: ./artifacts/figures/classification_curves_best.png
-- Сравнение C1–C4: ./artifacts/figures/classification_compare.png
-- Визуализация аугментаций: ./artifacts/figures/augmentations_preview.png
-- Визуализация сегментации: ./artifacts/figures/segmentation_examples.png
-- Метрики сегментации: ./artifacts/figures/segmentation_metrics.png
+- Таблица результатов: `./artifacts/runs.csv`
+- Лучшая модель части A: `./artifacts/best_classifier.pt`
+- Конфиг лучшей модели части A: `./artifacts/best_classifier_config.json`
+- Кривые лучшего прогона классификации: `./artifacts/figures/classification_curves_best.png`
+- Сравнение C1–C4: `./artifacts/figures/classification_compare.png`
+- Визуализация аугментаций: `./artifacts/figures/augmentations_preview.png`
+- Визуализация сегментации: `./artifacts/figures/segmentation_examples.png`
+- Метрики сегментации: `./artifacts/figures/segmentation_metrics.png`
 
 Короткая сводка:
 
