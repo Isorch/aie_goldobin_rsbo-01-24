@@ -1,0 +1,5 @@
+﻿query,before_retrieved_sources,after_retrieved_sources,changed,before_hit_at_k,after_hit_at_k,expected_source
+how to choose a threshold when error costs differ,doc_11 | doc_12 | doc_04,doc_13 | doc_11 | doc_12,True,0,1,doc_13
+how to detect data drift after deployment,doc_09 | doc_12 | doc_01,doc_14 | doc_09 | doc_12,True,0,1,doc_14
+which questions help detect target leakage,doc_04 | doc_10 | doc_09,doc_15 | doc_04 | doc_14,True,0,1,doc_15
+why is the default probability threshold not always optimal,doc_11 | doc_03 | doc_05,doc_13 | doc_11 | doc_14,True,1,1,doc_13 | doc_11

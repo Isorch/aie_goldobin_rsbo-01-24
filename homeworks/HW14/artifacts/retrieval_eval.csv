@@ -1,0 +1,11 @@
+﻿query,expected_source,retrieved_sources,hit_at_k,recall_at_k,rank_of_first_relevant,mrr_at_k
+why split data into train validation and test,doc_01,doc_01 | doc_02 | doc_03,1,1.0,1,1.0
+why should a scaler be fit only on the train split,doc_02 | doc_10,doc_02 | doc_03 | doc_10,1,1.0,1,1.0
+how to encode categorical variables without fake order,doc_03,doc_03 | doc_01 | doc_04,1,1.0,1,1.0
+how to handle missing values without leakage,doc_04 | doc_10,doc_04 | doc_02 | doc_06,1,0.5,1,1.0
+what to do with severe class imbalance,doc_05,doc_05 | doc_02 | doc_01,1,1.0,1,1.0
+why use cross validation on a small dataset,doc_06,doc_06 | doc_10 | doc_08,1,1.0,1,1.0
+which metrics matter when accuracy is misleading,doc_05 | doc_07,doc_11 | doc_05 | doc_09,1,0.5,2,0.5
+how does regularization reduce overfitting,doc_08,doc_08 | doc_06 | doc_03,1,1.0,1,1.0
+why are pipelines important during cross validation,doc_10 | doc_06,doc_10 | doc_06 | doc_08,1,1.0,1,1.0
+why inspect false positives and false negatives after metrics,doc_12 | doc_07,doc_12 | doc_07 | doc_05,1,1.0,1,1.0
